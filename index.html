@@ -73,41 +73,100 @@
         </div>
       </div>
     </header>
-    <section class="banner flex justify-between bg-green-200">
-      <div class="">
-        <img class="h-120" src="./assets/benner left.png" alt="" />
-      </div>
-
+    <section class="banner flex items-center h-205">
       <div
-        class="text-center flex flex-col items-center justify-center space-y-7"
+        class="container mx-auto flex flex-col items-start text-left space-y-7"
       >
-        <h2 class="font-bold text-5xl text-gray-200">
-          Plant a Tree, Grow a Future
+        <span
+          class="bg-green-600 text-white px-4 py-1 rounded-full text-sm font-medium"
+        >
+          🌱 Eco Friendly Initiative
+        </span>
+        <h2 class="font-bold text-6xl text-white">
+          Plant a Tree,<span class="text-green-600"> Grow a Future</span>
         </h2>
-        <p class="text-lg font-medium text-gray-300">
+        <p class="text-lg font-medium text-white">
           Join our mission to plant 1 million trees and make the Earth greener
           for <br />
           future generations.
         </p>
-        <button
-          class="btn bg-yellow-300 border-none rounded-full px-5 text-green-700"
-        >
-          Get Involved
-        </button>
-      </div>
-      <div class="">
-        <img class="h-120" src="./assets/banner right.png" alt="" />
+        <div class="flex gap-4">
+          <button
+            class="btn bg-yellow-300 border-none rounded-full px-6 text-green-700 hover:bg-yellow-400"
+          >
+            Get Involved
+          </button>
+
+          <button class="border border-white text-white px-6 py-2 rounded-full hover:border-none hover:bg-yellow-300 hover:text-green-700 transition duration-300">
+            Learn More
+          </button>
+        </div>
+
+        <div class="flex gap-10 text-white pt-4">
+          <div>
+            <h3 class="text-2xl font-bold ">50K+</h3>
+            <p class="text-sm">Trees Planted</p>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-bold">10K+</h3>
+            <p class="text-sm">Volunteers</p>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-bold">25+</h3>
+            <p class="text-sm">Cities Covered</p>
+          </div>
+        </div>
       </div>
     </section>
     <section class="main-section mt-24">
       <h2 class="text-center text-4xl font-bold mb-10">Choose Your Trees</h2>
-      <div class=" justify-between items-center container mx-auto mt-10 grid grid-cols-12 gap-4">
-        <div class="catagores col-span-3 bg-orange-600">
-          <h3 class="text-2xl font-semibold">Categories</h3>
-          <button class="btn btn-success w-full" id="all-Trees-btn">All Trees</button>
+      <div
+        class="justify-between items-center container mx-auto mt-10 grid grid-cols-12 gap-4"
+      >
+        <div
+          class="catagores col-span-3 shadow-2xl rounded-md space-x-0 space-y-3"
+        >
+          <h3 class="text-2xl font-semibold text-center">Categories</h3>
+
+          <div class="space-y-3 p-5 shadow-lg" id="category-Container">
+            <button class="btn btn-success w-full" id="all-Trees-btn">
+              All Trees
+            </button>
+          </div>
         </div>
-        <div class="col-span-6 bg-slate-600"></div>
-        <div class="your-card text-2xl font-semibold col-span-3 bg-green-500">Your Cart</div>
+        <div class="col-span-6 bg-slate-600">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-3 gap-5"
+            id="trees-Container"
+          >
+            <div class="card bg-white shadow-sm">
+              <figure>
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                  alt="Shoes"
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Card Title</h2>
+                <p class="line-clamp-2">
+                  A card component has a figure, a body part, and inside body
+                  there are title and actions parts
+                </p>
+                <div class="badge badge-success">Success</div>
+
+                <div class="card-actions justify-end mt-2">
+                  <p class="text-success text-3xl font-bold">$500</p>
+                  <button class="btn btn-primary rounded-full">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="your-card text-2xl font-semibold col-span-3 bg-green-500">
+          Your Cart
+        </div>
       </div>
     </section>
 
@@ -132,10 +191,6 @@
         </div>
       </div>
     </section> -->
-
-
-
-
 
     <script src="trees.js"></script>
   </body>
